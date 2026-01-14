@@ -3,7 +3,7 @@ namespace texasIcons {
 
 
 
-    //% block="Show Cowboy Hat Icon"
+    //% block="Show Cowboy Hat Icon with Delay %delay ms"
     //% delay.defl=150
     //% delay.min=20 delay.max=1000
     export function showCowboyHatIcon(delay: number = 150) {
