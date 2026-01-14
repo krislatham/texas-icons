@@ -3,8 +3,10 @@ namespace texasIcons {
 
 
 
-    //% block="Cowboy Hat Icon"
-    export function scrollCowboyHat(delay: number = 150) {
+    //% block="Show Cowboy Hat Icon"
+    //% delay.defl=150
+    //% delay.min=20 delay.max=1000
+    export function showCowboyHatIcon(delay: number = 150) {
         const frames = [
         images.createImage(`
 . . . . .
@@ -55,8 +57,13 @@ namespace texasIcons {
 . . . # .
 # # # # #`)
         ]
-        for(let frame of frames) {
-            //control.inBackground(() => scrollIcon(cowboyHatFrames, 150));
+        
+        scrollFrames(frames, delay)
+    }
+
+    //% blockHidden=true
+    function scrollFrames(frames: Image[], delay: number): void {
+        for (let frame of frames) {
             frame.showImage(0)
             basic.pause(delay)
         }
