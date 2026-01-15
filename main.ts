@@ -56,7 +56,11 @@ namespace texasIcons {
 # # # # #`)
         ]
         
-        scrollFrames(frames, delay)
+        //scrollFrames(frames, delay)
+        for (let frame of frames) {
+            frame.showImage(0)
+            basic.pause(delay)
+        }
     }
 
     //% blockHidden=true
