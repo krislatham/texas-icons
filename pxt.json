@@ -1,6 +1,6 @@
 {
     "name": "texas-icons",
-    "version": "0.0.18",
+    "version": "0.0.19",
     "description": "Texas icons and learning tools for elementary social studies. Create scrolling LED symbols and interactive activities about Texas history and geography.",
     "license": "MIT",
     "dependencies": {
